@@ -633,7 +633,7 @@ tailwind.config = {
 
   /* ── STATE ── */
   let btcBalance = 0;
-  let baseRate = 0.00000018;
+  let baseRate = 0.00000890;
   let boosted = false;
   let boostMultiplier = 1;
   let currentHashrate = 245.8;
@@ -774,7 +774,7 @@ tailwind.config = {
     btcEl.textContent = formatBTC(btcBalance);
     usdEl.textContent = formatUSD(btcBalance * BTC_PRICE);
   }
-  setInterval(tickBalance, 100);
+  setInterval(tickBalance, 50);
 
   /* ── HASHRATE UPDATE ── */
   function tickHashrate() {
